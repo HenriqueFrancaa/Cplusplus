@@ -21,5 +21,16 @@ int main(){
         }
         cout << endl;
     }
-    return 0;
+
+    int soma_linha;
+
+    for(int i = 0; i < n; i++){
+        for(int j = 0; j < n; j++){
+            soma_linha = quadrado[i][j] + quadrado[i][j+1];
+        }
+        cout << "soma da linha "<< i << " : " << soma_linha << endl;
+        soma_linha = 0;
+    }
+
+    return 0 ;
 }
